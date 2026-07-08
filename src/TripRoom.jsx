@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
 export default function TripRoom() {
-  // 1. จำลองข้อมูลคนในทริปไปก่อน
+  //จำลองข้อมูลคนในทริปไปก่อน
   const [members] = useState([
     { uid: 'A', name: 'อลิซ' },
     { uid: 'B', name: 'บ๊อบ' },
     { uid: 'C', name: 'ชาร์ลี' }
   ]);
 
-  // 2. จำลองรายการบิลที่เกิดขึ้น
+  //จำลองรายการบิลที่เกิดขึ้น
   const [expenses, setExpenses] = useState([
     { id: 1, title: 'ค่าหมูกระทะ', amount: 1500, payerUid: 'A' },
     { id: 2, title: 'ค่าแท็กซี่', amount: 300, payerUid: 'B' }
@@ -30,7 +30,7 @@ export default function TripRoom() {
         
         {/* คอลัมน์ซ้าย: รายการค่าใช้จ่าย */}
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold flex items-center gap-2">
+          <h2 className="text-xl font-semibold flex items-center gap-2 text-slate-900">
             🧾 บิลทั้งหมด
           </h2>
           
